@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+/*note: colors and heights are used for placeholders until we add content. You can remove heights once the images are there*/
+body {
+ font-family: Arial, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, 'sans-serif'; color: #FFFFFF;
+	font-size: 16px;
+	background-color: #fab279;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#wrapper {
+	width: 90%;
+	max-width: 1209px;
+	margin-left: auto;
+	margin-right: auto; /*this will center*/
+}
+header {
+	background-color: cornsilk;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+#content {
+	margin-bottom: 20px;
+}
+footer {
+	clear: both;
+	background-color: #FFF8DC;
+	color: cornsilk;
+}
+/*header content*/
+#logo {
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+nav {
+	font-family: 'Architects Daughter', cursive;
+	width: 666px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*about page*/
+.about-picture {
+	width: 35%;
+	float: left;
+}
+.about-text {
+	display: inline-block;
+	background-color: #c57f4a;
+	width: 62%;
+	margin-left: 1%;
+	float: left;
+	padding: 1%
+}
+.details-picture {
+	width: 35%;
+	float: left;
+}
+.details-text {
+	display: inline-block;
+	width: 62%;
+	margin-left: 1%;
+	float: left;
+	padding: 1%
+}
+.featured-items {
+	margin-bottom: 10px;
+	height: 395px;
+}
+p {
+	padding: 2% 2%;
+}
+/* .featured-items:last-child {
+	margin-bottom: 0px;
+	height: 395px;
+}
+/*product page*/
+.product {
+	max-width: 100%;
+	width: 32%;
+	height: auto;
+	margin-right: 1.9%;
+	float: left;
+}
+.product:nth-child(2) {
+	max-width: 100%;
+	height: auto;
+	margin-right: 0px;
+	float: right;
+}
+ul {
+	list-style-type: none;/*get rid of bullet points*/
+	padding-left: 0;
+}
+li {
+	display: inline-block;
+	width: 22%;
+	text-align: center;
+	margin-right: 3%;
+}
+li:last-child {
+	margin-right: 0;
+}
+a.navigation:link {
+	text-decoration: none;
+	color: cornsilk;
+	background-color: #C5804B;
+	display: block;
+	padding: 5px;
+}
+a.navigation:visited {
+	color: cornsilk;
+	background-color: #C5804B;
+}
+a.navigation:hover {
+	background-color: #8AD4E7;
+	color: #C5804B;
+}
+a.navigation:active {
+	background-color: #4A99C5;
+	color: #C5804B;
+}
+a.footer:link {
+	text-decoration: none;
+	color: cornsilk;
+	padding: 0;
+}
+a.footer:visited {
+	color: cornsilk;
+	background-color: #C5804B;
+}
+a.footer:hover {
+	color: #8AD4E7;
+}
+a.footer:active {
+	color: #4A99C5;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+@media (max-width:768px) {
+.product {
+	width: 100%;
+	margin: auto;
+	float: none;
+}
+img {
+	display: block;
+	margin: auto;
+}
+ul {
+	list-style-type: none;/*get rid of bullet points*/
+	padding-bottom: 9px;
+	display: block;
+	margin: auto;
+}
+li {
+	display: block;
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	margin-right: auto;
+	margin-top: 9px
+}
+li:last-child {
+	margin-right: auto;
+}
+nav {
+	width: 90%;
+	margin: auto;
+}
+.about-picture {
+	width: 100%;
+	margin-bottom: 10px
+}
+.about-text {
+	display: inline-block;
+	width: 98%;
+	margin: 0 auto 10px auto;
+	float: left;
+	padding: 1%
+}
+}
+/*font styles, nav styles, etc*/
