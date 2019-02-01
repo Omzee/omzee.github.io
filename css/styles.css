@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
-/* note: colors and heights are used for placeholders until we add content. You can remove heights once the images are there */
+/*note: colors and heights are used for placeholders until we add content. You can remove heights once the images are there*/
 body {
  font-family: Arial, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, 'sans-serif'; color: #FFFFFF;
 	font-size: 16px;
@@ -15,7 +15,7 @@ img {
 	width: 90%;
 	max-width: 1209px;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; /*this will center*/
 }
 header {
 	background-color: cornsilk;
@@ -23,17 +23,14 @@ header {
 	overflow: hidden;
 }
 #content {
-	background-color: #C57F4A;
 	margin-bottom: 20px;
 }
 footer {
 	clear: both;
 	background-color: #FFF8DC;
 	color: cornsilk;
-	padding: .1%;
 }
-
-/* header */
+/*header content*/
 #logo {
 	width: 150px;
 	margin-left: auto;
@@ -42,67 +39,23 @@ footer {
 }
 nav {
 	font-family: 'Architects Daughter', cursive;
-	letter-spacing: 1px;
-	width: 669px;
+	width: 666px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
-/* home content */
-.home-card {
-	background-color: #603912;
-}
-.home-picture {
-	width: 33%;
-	margin-bottom: -4px;
+/*about page*/
+.about-picture {
+	width: 35%;
 	float: left;
 }
-.home-text {
+.about-text {
 	display: inline-block;
+	background-color: #c57f4a;
 	width: 62%;
 	margin-left: 1%;
 	float: left;
-	padding-left: 1%;
+	padding: 1%
 }
-
-/* blog content */
-.blog-column {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.blog {
-	background-color: #603912;
-	padding: 20px;
-	margin-top: 20px;
-	text-align: center;
-}
-
-.blog-img {
-	margin-bottom: 1.5em;
-}
-
-.blog-text {
-	column-count: 4;
-}
-/* graphic design and
-user experience content */
-.product {
-	max-width: 100%;
-	width: 32%;
-	height: auto;
-	margin-right: 1.9%;
-	float: left;
-}
-.product:nth-child(3) {
-	max-width: 100%;
-	height: auto;
-	margin-right: 0px;
-	float: right;
-}
-
-/* details content */
 .details-picture {
 	width: 35%;
 	float: left;
@@ -112,29 +65,42 @@ user experience content */
 	width: 62%;
 	margin-left: 1%;
 	float: left;
-	padding-left: 1%;
+	padding: 1%
 }
 .featured-items {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	height: 395px;
 }
 p {
-	margin: 0px;
-    margin-block-end: 1em;
-	margin-block-start: 0em;
-	text-align: left;
+	padding: 2% 2%;
 }
-
-/* font styles, nav styles, etc */
+/* .featured-items:last-child {
+	margin-bottom: 0px;
+	height: 395px;
+}
+/*product page*/
+.product {
+	max-width: 100%;
+	width: 32%;
+	height: auto;
+	margin-right: 1.9%;
+	float: left;
+}
+.product:nth-child(2) {
+	max-width: 100%;
+	height: auto;
+	margin-right: 0px;
+	float: right;
+}
 ul {
-	list-style-type: none;
+	list-style-type: none;/*get rid of bullet points*/
 	padding-left: 0;
 }
 li {
 	display: inline-block;
 	width: 22%;
 	text-align: center;
-	margin-right: 2%;
+	margin-right: 3%;
 }
 li:last-child {
 	margin-right: 0;
@@ -173,63 +139,23 @@ a.footer:hover {
 a.footer:active {
 	color: #4A99C5;
 }
-
 .clearfix::after {
 	content: "";
 	clear: both;
 	display: table;
 }
-
-/* LARGE TABLET */
-@media (max-width:1100px) and (min-width:768px) {
-.blog-text {
-	column-count: 3;
-}
-}
-
-/* TABLET */
-@media (max-width:767px) and (min-width:401px) {
-
-img {
-	display: block;
-	margin: auto;
-}
-
-/* header content */
-nav {
-	width: 90%;
-	margin: auto;
-}
-
-/* home content */
-.home-picture {
-	width: 100%;
-	margin-bottom: 10px
-}
-.home-text {
-	display: inline-block;
-	width: 98%;
-	margin: 0 auto 10px auto;
-	float: left;
-	padding: 1%
-}
-
-/* graphic design and
-user experience content */
+@media (max-width:768px) {
 .product {
 	width: 100%;
 	margin: auto;
 	float: none;
 }
-
-/* blog info */
-.blog-text {
-	column-count: 2;
+img {
+	display: block;
+	margin: auto;
 }
-
-/* font styles, nav styles, etc */
 ul {
-	list-style-type: none;
+	list-style-type: none;/*get rid of bullet points*/
 	padding-bottom: 9px;
 	display: block;
 	margin: auto;
@@ -245,64 +171,20 @@ li {
 li:last-child {
 	margin-right: auto;
 }
+nav {
+	width: 90%;
+	margin: auto;
 }
-
-/* PHONE */
-@media (max-width:600px) {
-
-	img {
-		display: block;
-		margin: auto;
-	}
-	
-	/* header content */
-	nav {
-		width: 90%;
-		margin: auto;
-	}
-	
-	/* home content */
-	.home-picture {
-		width: 100%;
-		margin-bottom: 10px
-	}
-	.home-text {
-		display: inline-block;
-		width: 98%;
-		margin: 0 auto 10px auto;
-		float: left;
-		padding: 1%
-	}
-	
-	/* graphic design and
-	user experience content */
-	.product {
-		width: 100%;
-		margin: auto;
-		float: none;
-	}
-	
-	/* blog info */
-	.blog-text {
-		column-count: 1;
-	}
-	
-	/* font styles, nav styles, etc */
-	ul {
-		list-style-type: none;
-		padding-bottom: 9px;
-		display: block;
-		margin: auto;
-	}
-	li {
-		display: block;
-		width: 90%;
-		text-align: center;
-		margin: auto;
-		margin-right: auto;
-		margin-top: 9px
-	}
-	li:last-child {
-		margin-right: auto;
-	}
-	}
+.about-picture {
+	width: 100%;
+	margin-bottom: 10px
+}
+.about-text {
+	display: inline-block;
+	width: 98%;
+	margin: 0 auto 10px auto;
+	float: left;
+	padding: 1%
+}
+}
+/*font styles, nav styles, etc*/
